@@ -4,6 +4,9 @@ import models.Inventory;
 
 import static spark.Spark.*;
 
+// TODO: to run client, go to \server : npm run start
+// TODO: to run server: run in Intellij
+
 public class Main {
 
     public static void main(String[] args) {

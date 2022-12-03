@@ -25,7 +25,7 @@ public class Distributors {
         List<Distributor> distributors = new ArrayList<>();
         Workbook wb;
         try {
-            wb = WorkbookFactory.create(new File("resources/Distributors.xlsx"));
+            wb = WorkbookFactory.create(new File("server/resources/Distributors.xlsx"));
         } catch (IOException e) {
             //! Would log this with appropriate logging tool, but printing error for now and guard with return
             e.printStackTrace();
