@@ -89,8 +89,4 @@ public class InventoryTests extends Models {
 
     }
 
-    // TODO: create you own inventory and test capacity
-    // TODO: create test to verify createInventory() works. It is private; change to protected?
-
-
 }

@@ -25,6 +25,7 @@ public class Distributors {
         List<Distributor> distributors = new ArrayList<>();
         Workbook wb;
         try {
+            // TODO: Resolve issue to run code 'server' is needed; testing does not
             // server/resources/Distributors.xlsx
             wb = WorkbookFactory.create(new File("resources/Distributors.xlsx"));
         } catch (IOException e) {
