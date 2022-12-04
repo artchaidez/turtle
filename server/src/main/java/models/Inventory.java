@@ -24,7 +24,8 @@ public class Inventory {
         List<Item> inventory = new ArrayList<>();
         Workbook wb;
         try {
-            wb = WorkbookFactory.create(new File("server/resources/Inventory.xlsx"));
+            // server/resources/Inventory.xlsx
+            wb = WorkbookFactory.create(new File("resources/Inventory.xlsx"));
         } catch (IOException e) {
             //! Would log this with appropriate logging tool, but printing error for now and guard with return
             e.printStackTrace();

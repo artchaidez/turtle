@@ -1,8 +1,9 @@
 package autoFramework;
 
-import jdk.jfr.Timespan;
+// import jdk.jfr.Timespan;
 
 import java.text.MessageFormat;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -18,7 +19,7 @@ public class AutoLogger {
 
     private String testName;
 
-    private List<Timespan> timeTakenList = new ArrayList<Timespan>() {};
+    private List<Duration> timeTakenList = new ArrayList<Duration>() {};
 
     public String GetCurrentTestName()
     {

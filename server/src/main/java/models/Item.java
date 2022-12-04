@@ -36,5 +36,7 @@ public class Item {
         return cost;
     }
 
+    public int getId() {return id; }
+
     // mutators excluded since not required for requested functionality.
 }
