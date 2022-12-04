@@ -95,5 +95,30 @@ public class Inventory {
         return itemsUnderStocked;
     }
 
+    public int getInventorySize()
+    {
+        return inventory.size();
+    }
+
+    public String getItemNameByIndex(int index)
+    {
+        return inventory.get(index).getName();
+    }
+
+    public int getItemStockByIndex(int index)
+    {
+        return inventory.get(index).getStock();
+    }
+
+    public int getItemCapacityByIndex(int index)
+    {
+        return inventory.get(index).getCapacity();
+    }
+
+    public int getItemIdByIndex(int index)
+    {
+        return inventory.get(index).getId();
+    }
+
     // mutators excluded since not required for requested functionality.
 }

@@ -83,6 +83,7 @@ public class Distributors {
      * @return the lowest cost to restock
      */
     public double getRestockCost(String body) {
+        System.out.println(body);
         Gson gson = new Gson();
         Item[] itemArr = gson.fromJson(body, Item[].class);
         double cost = 0;
