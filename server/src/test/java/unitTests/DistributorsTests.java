@@ -42,5 +42,7 @@ public class DistributorsTests extends Models {
             Info(String.format("Confirmed getRestockCost() returned $%.2f", costToRestock));
     }
 
+    // TODO: pass in bad JSON to it fail
+
 
 }

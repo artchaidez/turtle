@@ -1,0 +1,46 @@
+{
+  "name": "turtle",
+  "version": "1.0.0",
+  "description": "- [Latest LTS version of Node](https://nodejs.org/en/download/)\r - [Java 8](https://www.java.com/en/download/manual.jsp)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artchaidez/turtle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artchaidez/turtle/issues"
+  },
+  "homepage": "https://github.com/artchaidez/turtle#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@jest/globals": "^29.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "cypress": "^11.2.0",
+    "jest": "^29.3.1",
+    "react-test-renderer": "^18.2.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0"
+  }
+}
