@@ -26,4 +26,42 @@ public class Distributor {
         // doesn't exist in vendor
         return Double.MAX_VALUE;
     }
+    // TODO: name, id, cost
+    public Boolean isItemInDistributorByName(String name)
+    {
+        for (int i = 0; i < items.size(); i++)
+        {
+            if (items.get(i).getName() == name)
+                return true;
+        }
+
+        return false;
+    }
+
+    public Boolean isItemInDistributorById(int id)
+    {
+        for (int i = 0; i < items.size(); i++)
+        {
+            if (items.get(i).getId() == id)
+                return true;
+        }
+
+        return false;
+    }
+
+    public Boolean isItemInDistributorByCost(double cost)
+    {
+        for (int i = 0; i < items.size(); i++)
+        {
+            if (items.get(i).getCost() == cost)
+                return true;
+        }
+
+        return false;
+    }
+
+    public int getTotalItems()
+    {
+        return items.size();
+    }
 }

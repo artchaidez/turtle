@@ -120,4 +120,9 @@ public class AutoLogger {
 
         stepNumber++;
     }
+
+    public void ResetSteps()
+    {
+        stepNumber = 1;
+    }
 }

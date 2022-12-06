@@ -18,12 +18,11 @@ public class ItemTests extends Models {
     @AfterMethod
     public void TestTearDown()
     {
-
+        ResetSteps();
     }
 
-    // TODO: Create methods to test; limit Assert usage
     @Test( description = "Test Item(String name, int id, double cost) and all its methods")
-    public void TestItemNameIdCost()
+    public void TestItemWithThreeArguments()
     {
         Step("Create fields for Item");
             String name = "SweetTart Ropes";
@@ -38,11 +37,10 @@ public class ItemTests extends Models {
             Assert.assertEquals(candy.getId(), id);
             Assert.assertEquals(candy.getCost(), cost);
             Info("All methods return correct data");
-
     }
 
     @Test( description = "Test Item(String name, int stock, int capacity, int id) and all its methods")
-    public void TestItemNameStockCapacityId()
+    public void TestItemWithFourArguments()
     {
         Step("Create fields for Item");
             String name = "SweetTart Ropes";
@@ -59,6 +57,5 @@ public class ItemTests extends Models {
             Assert.assertEquals(candy.getCapacity(), capacity);
             Assert.assertEquals(candy.getId(), id);
             Info("All methods return correct data");
-
     }
 }

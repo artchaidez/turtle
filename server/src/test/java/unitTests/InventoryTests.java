@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class InventoryTests extends Models {
 
     @BeforeMethod
@@ -21,10 +20,8 @@ public class InventoryTests extends Models {
     @AfterMethod
     public void TestTearDown()
     {
-
+        ResetSteps();
     }
-
-    // TODO: create test to verify createInventory() works. It is private; change to protected?
 
     @Test(description = "Test createInventory() correctly retrieves all data from Inventory.xlsx")
     public void TestCreateInventoryWorks()
@@ -49,7 +46,6 @@ public class InventoryTests extends Models {
             testInventoryList.add(new Item("Gummy Bears", 15, 35, 850125));
             testInventoryList.add(new Item("Sour Patch Kids", 14, 60,520745));
 
-        // TODO: Create methods to test; limit Assert usage
         Step("Verify createInventory() correctly retrieves all data from Inventory.xlsx");
             for (int index = 0; index < inventory.getInventorySize(); index++)
             {
@@ -76,7 +72,6 @@ public class InventoryTests extends Models {
             double stockThreshold = 0.25;
             List<Item> realCapacityList =  inventory.getItemsUnderPercentCapacity(stockThreshold);
 
-        // TODO: Create methods to test; limit Assert usage
         Step("Verify all data is correct from getItemsUnderPercentCapacity()");
             for (int index = 0; index < realCapacityList.size(); index++)
             {
@@ -86,7 +81,5 @@ public class InventoryTests extends Models {
                 Assert.assertEquals(realCapacityList.get(index).getId(), testInventoryList.get(index).getId());
             }
             Info("Confirmed all correct items retrieved using getItemsUnderPercentCapacity()");
-
     }
-
 }
