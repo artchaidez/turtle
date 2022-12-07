@@ -4,8 +4,6 @@ import models.Inventory;
 
 import static spark.Spark.*;
 
-// TODO: Test API calls
-
 public class Main {
 
     public static void main(String[] args) {

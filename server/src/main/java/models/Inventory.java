@@ -24,7 +24,6 @@ public class Inventory {
         List<Item> inventory = new ArrayList<>();
         Workbook wb;
         try {
-            // TODO: Resolve issue to run code 'server' is needed; testing does not
             // server/resources/Inventory.xlsx
             wb = WorkbookFactory.create(new File("resources/Inventory.xlsx"));
         } catch (IOException e) {
